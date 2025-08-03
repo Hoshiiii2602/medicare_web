@@ -2,6 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Main from "./Global/Main";
 import ErrorBoundary from "./ErrorBoundary";
 import WhatsAppButton from "./Components/WhatsappFloatingBtn";
+import ApiDebug from "./Components/ApiDebug";
 import { CityProvider } from "./Context/SelectedCity";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           <Main />
         </CityProvider>
         <WhatsAppButton />
+        <ApiDebug />
       </QueryClientProvider>
     </ErrorBoundary>
   );
