@@ -51,6 +51,8 @@ const GET = async (endPoint) => {
     },
     // Add CORS headers
     withCredentials: false,
+    // Allow mixed content and cross-origin requests
+    mode: 'cors',
   };
   
   try {
