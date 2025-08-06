@@ -133,15 +133,15 @@ export default function Doctors() {
                             gap={1}
                             alignItems={"center"}
                           >
-                            <RatingStars rating={item.average_rating} />{" "}
+                            <RatingStars rating={5} />{" "}
                             <Text
                               as={"span"}
                               mb={0}
                               color={"#000"}
                               fontSize={12}
                             >
-                              {parseFloat(item.average_rating).toFixed(1)} (
-                              {item.number_of_reviews})
+                              {parseFloat(5).toFixed(1)} (
+                              {5})
                             </Text>
                           </Text>
                           <Text
